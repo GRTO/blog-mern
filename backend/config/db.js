@@ -1,15 +1,18 @@
-import dotenv  from 'dotenv';
-import mongoose from 'mongoose';
+import dotenv from "dotenv";
+import mongoose from "mongoose";
 
 dotenv.config();
 
 async function connectDB() {
   try {
-    const con = await mongoose.connect(`mongodb://${process.env.MONGODB_HOST}/devskiller-blog-engine`, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useCreateIndex: true
-    });
+    const con = await mongoose.connect(
+      `mongodb://${process.env.MONGODB_HOST}/devskiller-blog-engine`,
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true,
+      }
+    );
 
     console.log(`Database connected : ${con.connection.host}`);
   } catch (error) {
