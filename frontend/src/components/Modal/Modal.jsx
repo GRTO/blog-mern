@@ -1,6 +1,5 @@
 import Button from "../../styles/GlobalComponents/Button.jsx";
 import { CSSTransition } from "react-transition-group";
-import ReactDOM from "react-dom";
 import {
   ModalBody,
   ModalContainer,
