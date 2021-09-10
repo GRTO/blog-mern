@@ -6,7 +6,7 @@ dotenv.config();
 async function connectDB() {
   try {
     const con = await mongoose.connect(
-      `mongodb://${process.env.MONGODB_HOST}/devskiller-blog-engine`,
+      `mongodb://${process.env.MONGODB_HOST}/blog-engine`,
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,
